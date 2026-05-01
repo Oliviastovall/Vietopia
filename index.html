@@ -1,3 +1,9 @@
+<!--
+AI Use Disclosure:
+Tool(s): ChatGPT (free version)
+Purpose: Figure out what boostrap components would be helpfull to add 
+Human Role: Added their suggestions
+-->
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,25 +11,32 @@
 
 <style>
 body {
-  font-family: Arial, sans-serif;
+  font-family:;
   margin: 0;
   padding: 0;
-  background-color: #f8f8f8;
+  background-color: rgba(202, 186, 140, 0.86);
   color: #333;
   text-align: center;
 }
 
-h1 {
-  background-color: #2e7d32;
-  color: white;
-  padding: 20px;
-  margin: 0;
+/* HEADER */
+.navbar {
+  background-color: #658d67;
+  padding: 28px 0;
 }
 
+.navbar-brand {
+  color: white !important;
+  font-size: 38px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Buttons */
 .button {
   background-color: white;
   border: 2px solid #2e7d32;
-  color: #2e7d32;
+  color: #6c9d6e;
   padding: 12px 20px;
   margin: 8px;
   font-size: 16px;
@@ -33,10 +46,11 @@ h1 {
 }
 
 .button:hover {
-  background-color: #2e7d32;
+  background-color: #749675;
   color: white;
 }
 
+/* Section styling */
 .section {
   margin: 40px auto;
   max-width: 700px;
@@ -46,92 +60,142 @@ h1 {
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-.hours {
+/* HOURS LAYOUT */
+.hours-wrapper {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+  font-size: 16px;
+}
+
+.hours-row {
   display: flex;
   justify-content: space-between;
-  padding: 5px 0;
-  border-bottom: 1px solid #eee;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
 }
 
+/* Form styling */
 input, textarea {
   width: 80%;
-  padding: 10px;
-  margin: 10px 0;
+  margin: 10px auto;
   border-radius: 5px;
-  border: 1px solid #ccc;
 }
 
-textarea {
-  resize: none;
-}
-
+/* Contact info */
 .contact-info p {
   margin: 5px 0;
   text-decoration: underline;
 }
 
+/* Footer */
 .footer {
   margin-top: 30px;
   font-size: 14px;
   color: gray;
 }
 </style>
-
 </head>
 
 <body>
 
-<h1>Vietopia</h1>
-
-<div class="section">
-  <button class="button">Pick Up</button>
-  <button class="button">Delivery</button>
-  <button class="button">Menu PDF</button>
-</div>
-
-<div class="section">
-  <h2>About & Contact</h2>
-  <p>
-    We are a small restaurant specializing in Vietnamese Cuisine in Harrisonburg VA,
-    located right off exit 245 on I-81. Vietopia is honored to have served the
-    Harrisonburg community for 20+ years.
-  </p>
-  <p>
-    We offer dine-in, pick up, and delivery through third-party services like DoorDash.
-    Seating capacity is 52 and the largest party we can take is 20.
-  </p>
-</div>
-
-<div class="section">
-  <h2>Hours</h2>
-  <div class="hours"><span>Monday</span><span>10:00 am - 9:00 pm</span></div>
-  <div class="hours"><span>Tuesday</span><span>10:00 am - 9:00 pm</span></div>
-  <div class="hours"><span>Wednesday</span><span>10:00 am - 9:00 pm</span></div>
-  <div class="hours"><span>Thursday</span><span>10:00 am - 9:00 pm</span></div>
-  <div class="hours"><span>Friday</span><span>10:00 am - 9:00 pm</span></div>
-  <div class="hours"><span>Saturday</span><span>10:00 am - 9:00 pm</span></div>
-  <div class="hours"><span>Sunday</span><span>10:00 am - 8:00 pm</span></div>
-</div>
-
-<div class="section">
-  <h2>Contact Us</h2>
-
-  <input type="text" placeholder="Name (required)">
-  <input type="email" placeholder="Email (required)">
-  <textarea rows="4">Send us an Email! Inquiries, feedbacks, all are welcome :)</textarea>
-  <br>
-  <button class="button">Submit</button>
-
-  <div class="contact-info">
-    <p>Management.contact@vietopia.net</p>
-    <p>540-438-0999</p>
-    <p>1015 Port Republic Road Harrisonburg, Virginia</p>
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="container">
+    <span class="navbar-brand mx-auto">Vietopia</span>
   </div>
+</nav>
+
+<div class="container">
+
+  <!-- ALERT -->
+  <div class="section">
+    <p>Open daily! Come enjoy authentic Vietnamese cuisine 🍜</p>
+  </div>
+
+  <!-- BUTTONS -->
+  <div class="section">
+    <button class="button">Pick Up</button>
+    <button class="button">Delivery</button>
+    <button class="button">Menu PDF</button>
+  </div>
+
+  <!-- ABOUT -->
+  <div class="section">
+    <h2>About & Contact</h2>
+    <p>
+      We are a small restaurant specializing in Vietnamese Cuisine in Harrisonburg VA,
+      located right off exit 245 on I-81. Vietopia has served the community for 20+ years.
+    </p>
+    <p>
+      We offer dine-in, pick up, and delivery through third-party services like DoorDash.
+    </p>
+  </div>
+
+  <!-- HOURS -->
+  <div class="section">
+    <h2>Hours</h2>
+
+    <div class="hours-wrapper">
+
+      <div class="hours-row">
+        <span>Monday</span><span>10:00 am - 9:00 pm</span>
+      </div>
+
+      <div class="hours-row">
+        <span>Tuesday</span><span>10:00 am - 9:00 pm</span>
+      </div>
+
+      <div class="hours-row">
+        <span>Wednesday</span><span>10:00 am - 9:00 pm</span>
+      </div>
+
+      <div class="hours-row">
+        <span>Thursday</span><span>10:00 am - 9:00 pm</span>
+      </div>
+
+      <div class="hours-row">
+        <span>Friday</span><span>10:00 am - 9:00 pm</span>
+      </div>
+
+      <div class="hours-row">
+        <span>Saturday</span><span>10:00 am - 9:00 pm</span>
+      </div>
+
+      <div class="hours-row" style="border-bottom: none;">
+        <span>Sunday</span><span>10:00 am - 8:00 pm</span>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- CONTACT -->
+  <div class="section">
+    <h2>Contact Us</h2>
+
+    <form>
+      <input type="text" placeholder="Name (required)">
+      <input type="email" placeholder="Email (required)">
+      <textarea rows="4"></textarea>
+      <br>
+      <button class="button">Submit</button>
+    </form>
+
+    <div class="contact-info">
+      <p>Management.contact@vietopia.net</p>
+      <p>540-438-0999</p>
+      <p>1015 Port Republic Road Harrisonburg, Virginia</p>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <p>Website and all creative work by Vietopia</p>
+  </div>
+
 </div>
 
-<div class="footer">
-  <p>Website and all creative work by Vietopia</p>
-</div>
+<script src="js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
